@@ -44,16 +44,10 @@ class FormWindow : Window
         List<Data> List = [];
         for (int i = 0; i < 10; i++)
         {
-            Data data = new()
-            {
-                Name = $"Name {i}",
-                Value = new Dictionary<string, Data>() { { $"Child {i}", new() } }
-            };
+            Data data = new($"Name {i}");
 
             for (int j = 0; j < 100; j++)
-            {
-                data.Value.Add($"Child {i}-{j}", new());
-            }
+                data.Value.Add($"Child {i}-{j}", new($"Name {i}"));
 
             List.Add(data);
         }
