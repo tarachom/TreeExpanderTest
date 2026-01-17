@@ -43,20 +43,14 @@ public class ConfiguratorDocumentsTree(List<Data> list)
 
             factory.OnBind += (_, args) =>
             {
-                ListItem listItem = (ListItem)args.Object;
-                TreeListRow? row = (TreeListRow?)listItem.GetItem();
-                if (row != null)
-                {
-                    TreeExpander? expander = (TreeExpander?)listItem.GetChild();
+                if (args.Object is not ListItem listItem) return;
+                if (listItem.GetItem() is not TreeListRow row) return;
+                if (listItem.GetChild() is not TreeExpander expander) return;
+                if (expander.GetChild() is not Label cell) return;
+                if (row.GetItem() is not ConfiguratorItemRow itemRow) return;
 
-                    var cell = (Label?)expander?.GetChild();
-                    ConfiguratorItemRow? itemRow = (ConfiguratorItemRow?)row.GetItem();
-                    if (expander != null && cell != null && itemRow != null)
-                    {
-                        expander.SetListRow(row);
-                        cell.SetText(itemRow.Name);
-                    }
-                }
+                expander.SetListRow(row);
+                cell.SetText(itemRow.Name);
             };
             var column = ColumnViewColumn.New("Documents", factory);
             column.Resizable = true;
@@ -64,6 +58,7 @@ public class ConfiguratorDocumentsTree(List<Data> list)
         }
 
         //Data type
+        /*
         {
             SignalListItemFactory factory = SignalListItemFactory.New();
             factory.OnSetup += (_, args) =>
@@ -115,15 +110,15 @@ public class ConfiguratorDocumentsTree(List<Data> list)
             var column = ColumnViewColumn.New("Details", factory);
             column.Resizable = true;
             columnView.AppendColumn(column);
-        }
+        }*/
 
         //Empty
-        {
+        /*{
             ColumnViewColumn column = ColumnViewColumn.New(null, null);
             column.Resizable = true;
             column.Expand = true;
             columnView.AppendColumn(column);
-        }
+        }*/
 
         ScrolledWindow scroll = new();
         scroll.Vexpand = scroll.Hexpand = true;
@@ -142,7 +137,7 @@ public class ConfiguratorDocumentsTree(List<Data> list)
         string group = itemRow.Group;
         object? obj = itemRow.Obj;
 
-        Console.WriteLine($"group {group}, obj {obj}");
+        //Console.WriteLine($"group {group}, obj {obj}");
 
         Gio.ListStore Store = Gio.ListStore.New(ConfiguratorItemRow.GetGType());
 
