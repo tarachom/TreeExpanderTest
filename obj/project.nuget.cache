@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "50SSUR334Xw=",
+  "dgSpecHash": "B9tz9ptYMnY=",
   "success": true,
-  "projectFilePath": "d:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj",
+  "projectFilePath": "D:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yurii.tarakhomyn\\.nuget\\packages\\gircore.cairo-1.0\\0.7.0\\gircore.cairo-1.0.0.7.0.nupkg.sha512",
     "C:\\Users\\yurii.tarakhomyn\\.nuget\\packages\\gircore.freetype2-2.0\\0.7.0\\gircore.freetype2-2.0.0.7.0.nupkg.sha512",

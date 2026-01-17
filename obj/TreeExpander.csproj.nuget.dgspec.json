@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj": {}
+    "D:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj": {}
   },
   "projects": {
-    "d:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj": {
+    "D:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj",
+        "projectUniqueName": "D:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj",
         "projectName": "TreeExpander",
-        "projectPath": "d:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj",
+        "projectPath": "D:\\Debug\\Work\\Test\\TreeExpander\\TreeExpander.csproj",
         "packagesPath": "C:\\Users\\yurii.tarakhomyn\\.nuget\\packages\\",
-        "outputPath": "d:\\Debug\\Work\\Test\\TreeExpander\\obj\\",
+        "outputPath": "D:\\Debug\\Work\\Test\\TreeExpander\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yurii.tarakhomyn\\AppData\\Roaming\\NuGet\\NuGet.Config",

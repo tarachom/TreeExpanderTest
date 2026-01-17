@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TreeExpander")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21164d2fd40b28352514d05794ea2272557d278d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+209f00781aa6a7e870012e6a76f59b74bb07f7c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("TreeExpander")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TreeExpander")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
