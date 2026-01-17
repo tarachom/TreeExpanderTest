@@ -58,7 +58,7 @@ public class ConfiguratorDocumentsTree(List<Data> list)
         }
 
         //Data type
-        {
+        /*{
             SignalListItemFactory factory = SignalListItemFactory.New();
             factory.OnSetup += (_, args) =>
             {
@@ -117,7 +117,7 @@ public class ConfiguratorDocumentsTree(List<Data> list)
             column.Resizable = true;
             column.Expand = true;
             columnView.AppendColumn(column);
-        }
+        }*/
 
         ScrolledWindow scroll = new();
         scroll.Vexpand = scroll.Hexpand = true;
