@@ -47,15 +47,16 @@ bin/Debug/net10.0/tr
 bin/Debug/net10.0/zh-Hans
 bin/Debug/net10.0/zh-Hant
 
+
 old
 obj/
-
+obj/Debug/*.*
 bin/Debug/net10.0/LatoFont
 bin/Debug/net10.0/runtimes
 
-#StorageAndTrade3
 TreeExpander
-TreeExpander.exe
+TreeExpander.*
+TreeExpander.AssemblyInfo.cs
 Configurator4
 Configurator4.exe
 Comparison.xml
